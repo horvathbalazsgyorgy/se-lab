@@ -14,7 +14,7 @@ public class TorpedoStore {
 
   private int torpedoCount = 0;
 
-  private Random random = new Random();
+  private Random random = new Random(); // The Random generator is now an attribute of the class. This way, you need to create the generator only once, leading to more efficient operation.
 
   public TorpedoStore(int numberOfTorpedos){
     this.torpedoCount = numberOfTorpedos;
